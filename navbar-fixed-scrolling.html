@@ -18,11 +18,26 @@
 	<link rel="stylesheet" href="css/mdb.min.css">
 	<!-- Your custom styles (optional) -->
 	<link rel="stylesheet" href="css/style.css">
+	<style>
+		.top-nav-collapse {
+  background-color: #000;
+}
+@media (max-width: 768px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #000;
+  }
+}
+@media (min-width: 800px) and (max-width: 850px) {
+  .navbar:not(.top-nav-collapse) {
+    background-color: #000;
+  }
+}
+	</style>
 </head>
 
 <body>
 	<!--Navbar-->
-	<nav class="navbar navbar-expand-lg navbar-dark primary-color fixed-top scrolling-navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar top-nav-collapse">
 		<!-- Additional container -->
 		<div class="container">
 			<!-- Navbar brand --> <a class="navbar-brand" href="#">Navbar</a>
